@@ -59,7 +59,7 @@ export const getPowerSet = (originalSet) => {
  * @param {} 需要解析的URL
  * @return {} 返回URL中的参数对象
  */
-function getUrlVars(stringUrl) {
+function getUrlParam(stringUrl) {
 	var map = {};
 	var parts = stringUrl.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
 		map[key] = value;

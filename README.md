@@ -7,3 +7,5 @@
 `curry`：函数柯里化
 
 `getPowerSet`：数组求子集
+
+`getUrlParam`：解析URL返回参数键值对象
