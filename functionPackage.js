@@ -23,8 +23,8 @@ export const curry = (fn) => {
 /**
  * 求子集函数
  * @author 陈年水墨
- * @param {} 需要求子集的数组
- * @returns {} 返回一个数组包数组
+ * @param {Array} 需要求子集的数组
+ * @returns {Array} 返回一个数组包数组
  */
 export const getPowerSet = (originalSet) => {
   // 定义一个空数组，用于存放子集
@@ -56,8 +56,8 @@ export const getPowerSet = (originalSet) => {
 /**
  * 求URL参数
  * @author 陈年水墨
- * @param {} 需要解析的URL
- * @return {} 返回URL中的参数对象
+ * @param {String} stringUrl 需要解析的URL
+ * @return {Object} map 返回URL中的参数键值对象
  */
 function getUrlParam(stringUrl) {
 	var map = {};
