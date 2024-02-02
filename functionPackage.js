@@ -51,3 +51,18 @@ export const getPowerSet = (originalSet) => {
   // 返回子集数组
   return subSets
 }
+
+
+/**
+ * 求URL参数
+ * @author 陈年水墨
+ * @param {} 需要解析的URL
+ * @return {} 返回URL中的参数对象
+ */
+function getUrlVars(stringUrl) {
+	var map = {};
+	var parts = stringUrl.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+		map[key] = value;
+	});
+	return map;
+}
