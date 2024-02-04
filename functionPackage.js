@@ -2,7 +2,7 @@
  * 柯里化函数
  * @author 陈年水墨
  * @param {Function} fn 原始函数
- * @return {Function} 柯里化后的函数
+ * @return {Function} curried 柯里化后的函数
  */
 export const curry = (fn) => {
  // 定义一个内部函数，用于接收部分参数并调用原始函数
@@ -23,8 +23,8 @@ export const curry = (fn) => {
 /**
  * 求子集函数
  * @author 陈年水墨
- * @param {Array} 需要求子集的数组
- * @returns {Array} 返回一个数组包数组
+ * @param {Array} originalSet 需要求子集的数组
+ * @returns {Array} subSets 返回一个数组包数组
  */
 export const getPowerSet = (originalSet) => {
   // 定义一个空数组，用于存放子集
